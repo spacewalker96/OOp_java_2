@@ -4,7 +4,6 @@ public class Employe {
     private String adress;
     private int anneeNaissance;
     private int anneeEncours;
-
     public int calculerAge(){
         return anneeEncours-anneeNaissance;
     }

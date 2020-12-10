@@ -1,3 +1,4 @@
+package pers;
 public class Etudiant extends Personne{
     private String diplome;
     public void ecrirePersonne(){

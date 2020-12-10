@@ -1,3 +1,4 @@
+package pers;
 public abstract class Personne {
     private String nom;
     private String prenom;
@@ -5,6 +6,8 @@ public abstract class Personne {
     private String adresse;
     private String ville;
     public abstract void ecrirePersonne();
+    private static int cpt = 0 ;
+
 
     public Personne(String nom, String prenom, int dateNaissance, String adresse, String ville) {
         this.nom = nom;
@@ -24,6 +27,7 @@ public abstract class Personne {
                 ", ville='" + ville + '\'' +
                 '}';
     }
+
     void modifiePersonne (String adresse, String ville){
         this.adresse = adresse;
         this.ville = ville;
